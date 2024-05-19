@@ -26,7 +26,7 @@ if sheet["A2"].value != None:
     
     for row in sheet.iter_rows(min_row=2, min_col=1, max_row=1000, max_col=1):
 
-        driver.get("https://support.accenture.com/now/nav/ui/classic/params/target/incident.do%3Fsys_id%3D-1%26sysparm_query%3Dactive%3Dtrue%26sysparm_stack%3Dincident_list.do%3Fsysparm_query%3Dactive%3Dtrue")     
+        driver.get("#############")     
         WebDriverWait(driver, timeOut).until(EC.title_contains(" | Incident | ServiceNow"))
         os.system('cls')
         for cell in row:
